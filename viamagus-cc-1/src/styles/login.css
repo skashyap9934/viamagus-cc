@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login header {
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px 1px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.amazon-logo {
+  width: 125px;
+}
+
+.trees-img {
+  height: 275px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.login > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.11) 0px 4px 6px -1px;
+  padding-bottom: 1rem;
+  z-index: 100;
+  background: white;
+}
+
+.login-body {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  width: 100%;
+}
+
+.inputs input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  padding: 5px;
+  outline: none;
+  border-bottom: 2px solid #eaeef4;
+}
+
+.inputs input::placeholder {
+  color: #2bbb22;
+  font-family: "Poppins";
+}
+
+.inputs {
+  padding-block: 1rem;
+  border-top: 1px solid black;
+}
+
+.submit-btn {
+  border-radius: 11px;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 18px;
+  background: #2bbb22;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background: #2cbb22dd;
+}
+
+.msg {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
+
+.msg-err {
+  color: red;
+  font-size: 11px;
+  padding-left: 5px;
+  margin: 0;
+  font-weight: bold;
+  margin-block: 5px;
+}
+
+.tree {
+  width: 175px;
+}
+
+@media (max-width: 800px) {
+  .login > div {
+    width: 55%;
+  }
+}
+
+@media (max-width: 400px) {
+  .login > div {
+    width: 75%;
+  }
+
+  .tree {
+    width: 101px;
+  }
+}
