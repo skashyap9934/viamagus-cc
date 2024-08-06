@@ -123,6 +123,10 @@ body {
   .login > div {
     width: 55%;
   }
+
+  .trees-img {
+    height: 375px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -132,5 +136,9 @@ body {
 
   .tree {
     width: 101px;
+  }
+
+  .trees-img {
+    height: 375px;
   }
 }

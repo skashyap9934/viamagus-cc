@@ -9,18 +9,21 @@ import amazonLogo from "../assets/amazon_logo.webp";
 import trees from "../assets/trees.png";
 import tree from "../assets/tree.jpg";
 
+// Variables
+const initState = { status: "", email: "", password: "" };
+
 const Login = () => {
   const [credentails, setCredentails] = React.useState({
     email: "",
     password: "",
   });
 
-  const [msg, setMsg] = React.useState({ status: "", email: "", password: "" });
+  const [msg, setMsg] = React.useState({...initState});
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setCredentails({ ...credentails, [name]: value });
-    setMsg({ ...msg, [name]: "" });
+    setMsg({ ...initState, [name]: "" });
   };
 
   const handleSubmit = (event) => {
@@ -32,7 +35,7 @@ const Login = () => {
     else {
       if (!regex.test(credentails.email))
         setMsg({ ...msg, email: "Invalid Email Address" });
-      else setMsg({ ...msg, password: "Invalid Password" });
+      else setMsg({ ...initState, password: "Invalid Password" });
     }
   };
 
@@ -54,11 +57,7 @@ const Login = () => {
             >
               Login
             </p>
-            <img
-              className="tree"
-              src={tree}
-              alt="tree"
-            />
+            <img className="tree" src={tree} alt="tree" />
           </div>
           <div className="inputs">
             <input
