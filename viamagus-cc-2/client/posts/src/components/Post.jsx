@@ -13,7 +13,7 @@ const Post = ({ id, userId, title, body }) => {
       <Td>
         <Link to={`/${id}`}>{id}</Link>
       </Td>
-      <Td>{userId}</Td>
+      <Td className="uid">{userId}</Td>
       <Td className="title">{title}</Td>
       <Td className="body">{body}</Td>
     </tr>

@@ -44,7 +44,29 @@ body {
 }
 
 .posts .upload-btn {
-  position: absolute;
-  top: 0;
-  right: 10%;
+  margin: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .posts .upload-btn {
+    font-size: 13px;
+  }
+
+  .uid {
+    display: none;
+  }
+
+  .posts > h2 {
+    font-size: 17px;
+  }
+
+  .posts > p {
+    font-size: 13px;
+  }
+
+  .table {
+    width: 80%;
+  }
 }

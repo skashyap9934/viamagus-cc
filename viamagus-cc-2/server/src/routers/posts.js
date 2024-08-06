@@ -33,9 +33,6 @@ postsRouter.get("/", async (req, res) => {
     res.status(200).json({ posts, totalPosts });
   } catch (error) {
     throw new Error(`Could not fetch the posts data ${error.message}`);
-  } finally {
-    await client.close();
-    console.log("*** Disconnected from the database ***");
   }
 });
 
@@ -57,9 +54,6 @@ postsRouter.get("/:postId", async (req, res) => {
     res.status(200).json({ post });
   } catch (error) {
     throw new Error(`Could not fetch the post data ${error.message}`);
-  } finally {
-    await client.close();
-    console.log("*** Disconnected from the database ***");
   }
 });
 
@@ -89,9 +83,6 @@ postsRouter.post("/add", validatePost, async (req, res) => {
     });
   } catch (error) {
     throw new Error(`Could not add new post ${error.message}`);
-  } finally {
-    await mongoose.disconnect();
-    console.log(`*** Database disconnected ***`);
   }
 });
 

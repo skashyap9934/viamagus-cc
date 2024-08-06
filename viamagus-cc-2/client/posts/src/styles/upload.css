@@ -21,3 +21,9 @@
 .upload input {
   box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+  .upload > div {
+    width: 75%;
+  }
+}

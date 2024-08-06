@@ -67,7 +67,7 @@ const Posts = () => {
           <Thead>
             <Tr>
               <Th>Sl No.</Th>
-              <Th>User Id</Th>
+              <Th className="uid">User Id</Th>
               <Th>Title</Th>
               <Th>Body</Th>
             </Tr>
