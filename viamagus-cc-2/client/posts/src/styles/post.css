@@ -1,0 +1,36 @@
+.single-pos {
+  font-family: "Poppins";
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.post-data {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 10px 50px;
+  padding: 1rem;
+  border-radius: 11px;
+  flex-direction: column;
+  font-size: 17px;
+  margin-top: 1rem;
+  gap: 1rem;
+  width: max-content;
+  max-width: 50%;
+}
+
+.post-data p:last-child,
+.post-data p:nth-last-child(2) {
+  text-align: justify;
+  text-transform: capitalize;
+}
+
+.single-post span {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-right: 0.5rem;
+}
