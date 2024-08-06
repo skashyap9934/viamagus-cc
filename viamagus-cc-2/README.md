@@ -10,7 +10,7 @@
 
 ## Setup frontend
 * Goto the path /viamagus-cc-2/client/posts
-* Goto package.json file and intall all the required dependencies
+* Goto package.json file and install all the required dependencies
 * Once done you are all set to start the frontend
 * Start the frontend using the command yarn dev or npm run dev
 
