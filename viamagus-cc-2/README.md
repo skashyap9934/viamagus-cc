@@ -17,8 +17,8 @@
 ## When the above steps don't work
 * Goto the directory where you want to start this project
 * Open this directory with VS Code and run the command npm create vite@latest my-app -- --template react
-* Delete the src folder and paste the only from the /viamagus-cc-2/client/posts path.
+* Delete the src folder and paste the only from the "/viamagus-cc-2/client/posts" path.
 * Repeat the last 3 steps as mentioned above
-* Make sure to change the VITE_BASE_URL in the .env file to http://localhost:8888
+* Make sure to change the VITE_BASE_URL in the .env file to "http://localhost:8888"
 
 In case of any query mail me at: kashyapsaurav531@gmail.com
